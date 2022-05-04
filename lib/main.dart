@@ -1,7 +1,24 @@
+
 import 'package:flutter/material.dart';
+
+// String getFileName(String firstName, String lastName) =>
+//   '$firstName $lastName';
+
+// void printMyName(String firstName, String lastName) {
+//   print('My name is ${getFileName(firstName, lastName)}');
+// }
 
 void main() {
   runApp(const MyApp());
+}
+
+void test() {
+  final name = 'Foo';
+  if (name == "Foo") {
+    print("Yes this is Foo");
+  } else {
+    print("No this is not Foo");
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -10,6 +27,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    test();
     return MaterialApp(
       title: 'Flutter Demo Alejandro',
       theme: ThemeData(
